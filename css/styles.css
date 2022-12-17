@@ -18,6 +18,20 @@ html {
     --light: #F4F4FD;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .container {
     width: 1158px;
     margin-left: auto;
@@ -25,6 +39,14 @@ html {
     padding-left: 12px;
     padding-right: 12px;
     outline: 1px solid red;
+}
+
+.container.cont-dark {
+    background: var(--dark);
+}
+
+.container.cont-light {
+    background: var(--light);
 }
 
 h1,
@@ -56,6 +78,13 @@ body {
 }
 .list-point-none {
     list-style-type: none;
+}
+
+/* ------------STUDIO------------ */
+/* HEADER */
+
+.header-paddings {
+    padding: 24px 156px;
 }
 
 .header-logo {
@@ -91,11 +120,12 @@ body {
 }
 .cotacts-list {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5; 
 }
 .cotacts-item {
 }
 .contacts-link {
+    color: var(--text);
 }
 
 .contacts-link:hover, .contacts-link:focus {
@@ -106,12 +136,15 @@ body {
 
 .hero {
     text-align: center;
+    padding-top: 192px;
+    padding-bottom: 192px;
 }
 .hero-header {
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
     color: #FFFFFF;
+    padding-bottom: 48px;
 }
 .hero-button {
     font-weight: 600;
@@ -121,6 +154,8 @@ body {
     background-color: var(--primary-brand);
     border:none;
     letter-spacing: 0.04em;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
 .hero-button:hover, .hero-button:focus {
@@ -130,6 +165,8 @@ body {
 /* PRINCIPLES */
 
 .principles {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .principles-header {
 }
@@ -148,11 +185,12 @@ body {
 .principles-item-paragraph {
     font-size: 16px;
     line-height: 1.2;
+
+    /* SERVICES */
     
 }
 .services {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 .services-header {
     font-weight: 600;
@@ -168,7 +206,9 @@ body {
 .services-item {
 }
 
-.team .container {
+/* TEAM */
+
+.container.team {
     padding-top: 120px;
     padding-bottom: 120px;
 
@@ -181,6 +221,7 @@ body {
     text-align: center;
 }
 .team-list {
+    margin-top: 72px;
     text-align: center;
 
 }
@@ -197,7 +238,13 @@ body {
     line-height: 1.5;
 }
 
-/* ------------ */
+/* FOOTER */
+
+.container.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
+}
 
 .footer-logo {
     font-family: 'Raleway';
@@ -215,17 +262,33 @@ body {
 .footer-paragraph {
     font-size: 16px;
     line-height: 1.5;
+    width: 264px;
+    margin-top: 16px;
+}
+
+/* ------------PORTFOLIO------------ */
+
+.container.navigation {
+    padding-top: 96px;
+    padding-bottom: 120px;
+    
+}
+.navigation-portf {
+    padding-bottom: 72px;
+    text-align: center;
 }
 
 .navigation-button {
     color: var(--primary-brand);
     background-color: var(--light);
     border: none;
+    border-radius: 4px;
     letter-spacing: 0.04em;
     cursor: pointer;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
+    padding: 12px 24px;
 }
 
 .navigation-button:hover, .navigation-button:focus {
@@ -233,11 +296,14 @@ body {
     background-color: var(--primary-brand);
 }
 
+
 .portfolio-services {
 }
 .portf-serv-list {
 }
 .portf-serv-item {
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
 .portf-serv-link {
 }
@@ -245,7 +311,10 @@ body {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    color:var(--dark)
+    color:var(--dark);
+    margin-top: 32px;
+    margin-bottom: 8px;
+
 }
 .portf-serv-praragraph {
     font-size: 16px;
