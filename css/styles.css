@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --primary-brand: #4D5AE5;
     --dark: #2E2F42;
@@ -6,6 +16,33 @@
     --subtle-text: #8E8F99;
     --accent:#E7E9FC;
     --light: #F4F4FD;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    outline: 1px solid red;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 body { 
@@ -64,7 +101,11 @@ body {
 .contacts-link:hover, .contacts-link:focus {
     color: var(--primary-brand)
 }
+
+/* HERO */
+
 .hero {
+    text-align: center;
 }
 .hero-header {
     font-weight: 600;
@@ -85,11 +126,15 @@ body {
 .hero-button:hover, .hero-button:focus {
     background-color: #404BBF;
 }
+
+/* PRINCIPLES */
+
 .principles {
 }
 .principles-header {
 }
 .principles-list {
+    width: 264px;
 }
 .principles-item {
 }
@@ -98,6 +143,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: var(--dark);
+    padding-bottom: 8px;
 }
 .principles-item-paragraph {
     font-size: 16px;
@@ -105,25 +151,38 @@ body {
     
 }
 .services {
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 .services-header {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     color:var(--dark);
+    text-align: center;
 
 }
 .services-list {
+    margin-top: 72px;
 }
 .services-item {
+}
+
+.team .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
 }
 .team-header {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     color:var(--dark);
+    text-align: center;
 }
 .team-list {
+    text-align: center;
+
 }
 .team-item {
 }
@@ -137,6 +196,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
+
+/* ------------ */
+
 .footer-logo {
     font-family: 'Raleway';
     font-style: normal;
