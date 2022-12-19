@@ -166,9 +166,12 @@ header {
 }
 
 .hero {
+    max-width: 1128px;
     text-align: center;
     padding-top: 192px;
     padding-bottom: 192px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-header {
     font-weight: 600;
@@ -296,8 +299,11 @@ header {
 /* FOOTER */
 
 footer {
+    max-width: 1128px;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
     /* padding-left: 156px; */
 }
 
