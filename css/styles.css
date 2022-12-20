@@ -32,10 +32,7 @@ html {
     overflow: hidden;
   }
 
-  /* section {
-    padding-left: 156px;
-    padding-right: 156px;
-  } */
+
 .container {
     width: 1158px;
     margin-left: auto;
@@ -371,18 +368,20 @@ footer {
 }
 
 .serv-text {
-    width: 360px;
+    
     padding-top: 32px;
     padding-bottom: 32px;
     padding-right: auto;
     padding-left: 16px;
     border: outline;
-    border: 0.5px solid #F4F4FD;
+    
 }
 
 
 .portf-serv-item {
-    height: 420px;
+    /* height: 420px; */
+    width: 360px;
+    border: 0.5px solid #F4F4FD;
 
 }
 
