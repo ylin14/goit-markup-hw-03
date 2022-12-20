@@ -367,18 +367,10 @@ footer {
     row-gap: 48px;
 }
 
-.serv-text {
-    
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: auto;
-    padding-left: 16px;
-    border: outline;
-}
+
 
 
 .portf-serv-item {
-    /* height: 420px; */
     width: 360px;
     border: 0.5px solid #F4F4FD;
 
@@ -386,6 +378,15 @@ footer {
 
 .portf-serv-item:nth-child(3n) {
     margin-right: calc(100%-2*24px)/3
+}
+
+.serv-text {
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: auto;
+    padding-left: 16px;
+    border: outline;
 }
 
 .portf-serv-link {
