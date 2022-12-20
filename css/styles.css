@@ -374,7 +374,7 @@ footer {
     width: 360px;
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-right: 54px;
+    padding-right: auto;
     padding-left: 16px;
     border: outline;
     border: 0.5px solid #F4F4FD;
@@ -382,8 +382,7 @@ footer {
 
 
 .portf-serv-item {
-
-    /* height: 420px; */
+    height: 420px;
 
 }
 
@@ -394,11 +393,10 @@ footer {
 .portf-serv-link {
 }
 .portf-serv-header {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color:var(--dark);
-    /* margin-top: 32px; */
     margin-bottom: 8px;
 
 }
